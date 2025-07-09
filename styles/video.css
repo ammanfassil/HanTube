@@ -1,0 +1,455 @@
+body {
+    margin-top: 80px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.love-letter {
+    background: rgba(179, 150, 150, 0.7);
+    backdrop-filter: blur(11px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    
+    position: fixed;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+    top: 10%;
+    border-radius: 30px;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+
+    scrollbar-color: white rgba(10, 10, 19, 0);
+    scrollbar-width: thin;
+    scroll-padding-left: 30px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.the-notifications:focus .love-letter {
+    opacity: 1;
+}
+
+.love-letter-words {
+    max-width: 650px;
+    font-family: Roboto, Arial;
+    
+    font-size: 20px;
+
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    line-height: 22px;
+    margin: auto;
+
+    text-align: justify;
+
+}
+
+.first {
+   font-size: 29px;
+   padding-bottom: 40px;
+   text-align: center;
+   line-height: 35px;
+}
+
+.second {
+   display: block;
+}
+
+.amman-signature {
+    height: 60px;
+    padding-top: 10px;
+}
+
+.video-page {
+    display: grid;
+    grid-template-columns: 1fr 445px;
+    column-gap: 20px;
+
+    padding-right: 10px;
+}
+
+@media (max-width: 995px) {
+    .video-page {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .recommended-videos-column {
+        width: 100%;
+        margin-top: 410px;
+        margin-right: 30px;
+        margin-left: -22.5px;
+    }
+}
+
+.main-video-column {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.main-video {
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+.video-description {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 700;
+    color: rgb(15, 15, 15);
+    
+    word-break: break-word;
+    line-height: 26px;
+    padding-top: 1px;
+}
+
+.channel-info {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.left-channel-info {
+    display: flex;
+}
+
+.right-channel-info {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.channel-pfp {
+    height: 44px;
+    border-radius: 25px;
+}
+
+.channel-deep-info {
+    padding-left: 12.5px;
+}
+
+.channel-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(15, 15, 15);
+    padding-top: 6px;
+    display: inline-block;
+}
+
+.subscriber-count {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    font-weight: 400;
+    height: 15px;
+    line-height: 13px;
+    padding-top: 5px;
+}
+
+.channel-verification {
+    height: 11.5px;
+    display: inline-block;
+    padding-left: 2px;
+    vertical-align: top;
+    margin-top: 9px;
+}
+
+.subscribe-button-div {
+    vertical-align: center;
+    display: flex;
+    margin-left: 1px;
+}
+
+.subscribe-button {
+    background-color: rgb(15, 15, 15);
+    border-radius: 100px;
+    border: none;
+    width: 98px;
+    height: 40px;
+    color: white;
+    margin-left: 20px;
+    font-size: 14.5px;
+    font-weight: 500;
+    font-stretch: 100%;
+    margin-top: 2px;
+}
+
+.button1 {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    width: 135px;
+    height: 40px;
+    position: relative;
+    border: none;
+    margin-top: 2px;
+}
+
+.button2 {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    height: 40px;
+    margin-top: 2px;
+    border: none;
+    margin-left: 8px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.share {
+    height: 23px;
+    padding-left: 5px;
+}
+
+.share-text {
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 5px;
+    bottom: 6px;
+}
+
+.button3 {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-top: 2px;
+    border: none;
+
+    margin-left: 8px;
+    border-radius: 100px;
+}
+
+.more {
+    height: 10px;
+    padding-top: 4px;
+    padding-left: 1px; 
+}
+
+.thumbs-up {
+    height: 30px;
+    display: inline-block;
+    padding-top: 3px;
+    position: absolute;
+    left: 9px;
+    top: 4.5px;
+}
+
+.like-count {
+    display: inline-block;
+    position: absolute;
+    font-weight: 550;
+    font-size: 14px;
+    left: 44px;
+    top: 12px;
+}
+
+.thumbs-down {
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 9px;
+    top: 6.5px;
+}
+
+.thumb-divider {
+    display: inline-block;
+    height: 28px;
+    width: 1.25px;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+
+.description-box {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    box-shadow: inset 1px 2px 3px rgba(15, 15, 15, 0.005);
+
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Roboto, Arial, sans-serif;
+    color: rgb(15, 15, 15);
+
+    padding: 12px;
+}
+
+.transcript-1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+.transcript-2 {
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.transcript-button {
+    background-color: transparent;
+    color: rgb(6, 95, 212);
+    font-weight: 500;
+    font-size: 14px;
+    border-style: solid;
+    border-color: rgba(96, 96, 96, 0.2);
+    border-width: 1px;
+    border-radius: 100px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.transcript-button:hover {
+    background-color: rgb(222, 241, 255);
+    border-color: rgb(222, 241, 255);
+}
+
+.description-info {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    border-top-width: 8px;
+    border-top-style: solid;
+    border-top-color: rgba(161, 161, 161, 0.389);
+}
+
+.recommended-videos-column {
+    padding-left: 30px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.recommended {
+    margin-bottom: 10px;
+    height: 95px;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.thumbnail {
+    height: 100%;
+    display: inline-block;
+}
+
+.recommended-time-stamp {
+    font-size: 11px;
+
+    font-weight: 500;
+    border-radius: 4px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    bottom: 5px;
+    left: 136px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    justify-content: center;
+}
+
+.recommended-title {
+    color: rgb(15, 15, 15);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+
+.recommended-title-exception {
+    color: rgb(15, 15, 15);
+    font-size: 14px;
+    font-weight: 500;
+  
+    margin-bottom: 9px;
+}
+
+.recommended-channel {
+    font-size: 12px;
+    line-height: 9px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 8px;
+}
+
+.recommended-views {
+    font-size: 12px;
+    display: block;
+    color: rgb(96, 96, 96);
+    margin-bottom: 33px;
+}
+
+.recommended-views-exception {
+    font-size: 12px;
+    display: block;
+    color: rgb(96, 96, 96);
+    margin-bottom: 6px;
+}
+
+.recommended-verified {
+    width: 11.9px;
+    display: inline-block;
+    padding-left: 2px;
+    margin-bottom: -2px;
+}
+
+.recommended-settings {
+    display: flex;
+    margin-top: 5px;
+    height: 17px;
+    display: inline-block;
+
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.right-right {
+    width: 20px;
+    height: 80px;
+    margin-left: auto; 
+    margin-right: 5px;
+}

@@ -1,0 +1,246 @@
+.side-bar {
+    background-color: white;
+    position: fixed;
+    width: 75px;
+    top: 50px;
+    bottom: 0px;
+    left: 1px;
+
+    z-index: 1000;
+}
+
+.home-button {
+    background-color: transparent;
+    height: 70px;
+    width: 72px;
+    border: none;
+    vertical-align: center;
+    margin-top: 11px;
+    padding-bottom: 1px;
+    padding-top: 14px;
+
+    position: relative;
+}
+
+.home-button .tooltip {
+    position: absolute;
+
+    width: 60px;
+    background-color: rgba(118, 118, 118, 0.8);
+    left: 80px; 
+    top: 10px;
+
+    font-size: 9.5px;
+    border-radius: 3px;
+    color: white;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.home-button:hover .tooltip {
+    opacity: 1;
+}
+
+.reels-button {
+    background-color: transparent;
+    height: 70px;
+    width: 72px;
+    border: none;
+    margin-left: 3px;
+    margin-top: 4px;
+    padding-bottom: 1px;
+    padding-top: 14px;
+    border-radius: 10px;
+    vertical-align: center;
+}
+
+.reels-button .tooltip {
+    position: absolute;
+
+    width: 60px;
+    background-color: rgba(118, 118, 118, 0.8);
+    left: 80px; 
+    top: 95px;
+
+    font-size: 9.5px;
+    border-radius: 3px;
+    color: white;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.reels-button:hover .tooltip {
+    opacity: 1;
+}
+
+.subscription-button {
+    background-color: transparent;
+    height: 70px;
+    width: 72px;
+    border: none;
+    margin-left: 3px;
+    margin-top: 4px;
+    padding-bottom: 1px;
+    padding-top: 14px;
+    border-radius: 10px;
+    vertical-align: center;
+}
+
+.subscription-button .tooltip {
+    position: absolute;
+
+    width: 80px;
+    background-color: rgba(118, 118, 118, 0.8);
+    left: 80px; 
+    top: 175px;
+
+    font-size: 9.5px;
+    border-radius: 3px;
+    color: white;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.subscription-button:hover .tooltip {
+    opacity: 1;
+}
+
+
+.profile-button {
+    background-color: transparent;
+    height: 70px;
+    width: 72px;
+    border: none;
+    margin-left: 3px;
+    margin-top: 4px;
+    padding-bottom: 1px;
+    padding-top: 14px;
+    border-radius: 10px;
+    vertical-align: center;
+}
+
+.profile-button .tooltip {
+    position: absolute;
+
+    width: 60px;
+    background-color: rgba(118, 118, 118, 0.8);
+    left: 80px; 
+    top: 250px;
+
+    font-size: 9.5px;
+    border-radius: 3px;
+    color: white;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.profile-button:hover .tooltip {
+    opacity: 1;
+}
+
+
+.home-image {
+    height: 26px;
+    width: 26px;
+    position: relative;
+    left: 1.5px;
+    
+    vertical-align: center;
+    justify-content: center;
+}
+
+.reels-image {
+    height: 26px;
+    width: 26px;
+    position: relative;
+    
+
+    left: -0.4px;
+    
+    vertical-align: center;
+    justify-content: center;
+}
+
+.subscription-image {
+    height: 26px;
+    width: 26px;
+    position: relative;
+    
+    left: 0.8px;
+    
+    vertical-align: center;
+    justify-content: center;
+}
+
+.profile-image {
+    height: 26px;
+    width: 26px;
+    position: relative;
+    left: 0px;
+    
+    vertical-align: center;
+    justify-content: center;
+
+
+}
+
+.home-text {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 3px;
+    padding-left: 5px;
+}
+
+.shorts-text {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 3px;
+    padding-left: 2px;
+}
+
+.subscription-text {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 2px;
+    padding-left: 4;
+}
+
+.profile-text {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 1.5px;
+}
